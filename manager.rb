@@ -36,7 +36,17 @@ class Manager < Employee
   end
 
   def give_all_raises
-    @salary += 150
+    index = 0
+    @employees.length.times do
+      @employees[index].give_annual_raise
+      index += 1
+    end
+  end
+
+  def fire_all_employees
+    @employees.each do |employee|
+      employee.active = fire_all_employees
+    end
   end
 end
 
@@ -45,3 +55,4 @@ manager.print_info
 manager.send_report
 manager.give_all_raises
 p employee1
+puts "test"

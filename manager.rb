@@ -16,23 +16,6 @@ class Employee
   def give_annual_raise
     @salary = 1.05 * @salary
   end
-
-  def first_name ##getter methods
-    @first_name
-  end
-
-  def last_name ##getter methods
-    @last_name
-  end
-
-  def active ##getter methods
-    @active
-  end
-
-  # setter/ writer methods
-  def active=(input_active)
-    @active = input_active
-  end
 end
 
 employee1 = Employee.new({ first_name: "Majora", last_name: "Carter", salary: 80000, active: true })
